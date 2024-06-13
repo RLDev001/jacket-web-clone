@@ -17,7 +17,8 @@ html,body{
 nav i{
     color: white;
     border: 8px solid black;
-    font-size: 20px;
+    font-size: 30px;
+    font-size: 1.5vw;
     border-radius: 50%;
     font-weight: 500;  
    background-color: black;
@@ -25,7 +26,8 @@ nav i{
 nav ul{
     list-style: none;
     height: 80px;
-    font-size: 20px;
+    
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -34,8 +36,9 @@ nav ul{
 }
 #hero-1 > h1{  
 
-    font-size: 100px;
-    line-height: 1;
+
+    font-size: 5vw;
+    line-height: 1.2;
     font-weight: 200;
 }
 #hero-1
@@ -45,8 +48,10 @@ nav ul{
 #hero-in {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
-    font-size: 30px;
+    padding: 50px 0;
+    
+
+    font-size: 1.7vw;
 }
 #right{
     width: 20%;
@@ -61,16 +66,19 @@ nav ul{
     padding: 20px 0;
 }
 .elem i{
-    font-size: 30x;
+    color: rgb(69, 68, 68);
+    font-size: 30px;
+    font-size: 2vw;
     font-weight: 100;
     opacity: 0;
 
 }
 .elem a{
-    color: black;
+    color: rgb(69, 68, 68);
     text-decoration: none;
     font-weight: 600;
     font-size: 25px;
+    font-size: 1.7vw;
 }
 
 .elem:hover i{
@@ -81,9 +89,97 @@ nav ul{
 }
 
 #bottom {
-    height: 42.5%;
+    height: 35%;
     width: 100%;
     background-image: url(https://images.unsplash.com/photo-1715638427009-8b0fe7096838?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
+}
+@media (max-width:700px) {
+    #main{
+        height: 100%;
+        width: 100%;
+    }
+    nav i{
+        color: white;
+        border: 8px solid black;
+    
+        font-size: 2vw;
+        border-radius: 50%;
+        font-weight: 500;  
+       background-color: black;
+    }
+    nav ul{
+        list-style: none;
+        height: 80px;
+        
+        font-size: 2vw;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: right;
+        padding: 0 30px;
+    }
+    #hero-1 > h1{  
+    
+    
+        font-size: 7vw;
+        line-height: 1.2;
+        font-weight: 200;
+    }
+    #hero-1
+    {
+        padding: 0px 40px;
+    }
+    #hero-in {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0;
+        font-size: 2.5vw;
+    }
+    #right{
+        width: 100%;
+    }
+    
+    .elem{
+        display:  flex;
+       margin-top: 30px;
+        border-top: 1px solid #000;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .elem i{
+        color: rgb(69, 68, 68);
+       
+        font-size: 3vw;
+        font-weight: 100;
+        opacity: 1;
+    
+    }
+    .elem a{
+        color: rgb(69, 68, 68);
+        text-decoration: none;
+        font-weight: 600;
+   
+        font-size: 3vw;
+    }
+    
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+         text-decoration: underline;
+    }
+    
+    #bottom {
+        height: 35%;
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1715638427009-8b0fe7096838?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: center;
+    }
+    
 }
